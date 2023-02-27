@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import styles from '../styles/Home.module.css'
+import TaskList from '../features/task-reference-redux/TaskList'
 
 const IndexPage: NextPage = () => {
   return (
@@ -10,9 +11,7 @@ const IndexPage: NextPage = () => {
         <title>Autority Challenge</title>
       </Head>
       <header className={styles.header}>
-        <p>
-          Edit <code>src/App.tsx</code> for your logic
-        </p>
+        <TaskList />
       </header>
     </div>
   )
